@@ -261,6 +261,7 @@ def My_CNNmodel():
 
   return model
 
+# View our model summary
 model=My_CNNmodel()
 model.summary()
 
