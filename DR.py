@@ -49,7 +49,7 @@ classifier.add(Dense(activation='softmax', units=4)) #Output layer
 #Compiling the CNN
 classifier.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-#PART 2 - Fitting the CNN to the image
+#PART 2 - Fitting the CNN to the image 
 from keras.preprocessing.image import ImageDataGenerator
 
 train_datagen = ImageDataGenerator(rescale=1./255, shear_range=0.2, zoom_range=0.2, horizontal_flip=True)
@@ -162,7 +162,7 @@ plt.show()
 # cm = confusion_matrix(test_set.classes, y_pred)
 # plot_confusion_matrix(cm, target_names, title='Confusion Matrix')
 
-# ACCURACY OBTAINED - 72.81% ///// VALIDATION ACCURACY LOW - 42.04%
+# ACCURACY OBTAINED - 72.81% ///// VALIDATION ACCURACY LOW - 54.04%
 
 #####################################################################################################
 #####################################################################################################
