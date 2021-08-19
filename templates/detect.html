@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Diabetic Retinopathy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">	 -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../static/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../static/css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="../static/css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../static/css/style.css">
+
+    <link rel="stylesheet" href="../static/css/upload.scss">
+
+	<!-- Modernizr JS -->
+	<script src="../static/js/modernizr-2.6.2.min.js"></script>
+    <script src="../static/js/upload.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="/index">Diabetic Retinopathy<span>.</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="detect.html">Detect</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Team</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	<div id="fh5co-features">
+		<div class="container">
+			<div class="row animate-box">
+				<!-- <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <br></br>
+                    <br></br>
+					<h2>Upload the Image</h2>
+					<br></br>
+                    <br></br>
+                    <a class="btn btn-primary btn-lg btn-demo" href = 'detect.html'></i> Choose File</a>
+				</div> -->
+
+				<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
+				<div class="loader"></div>
+                <div class="file-upload col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<br></br>
+                    <br></br>
+					<h2>Upload the Image</h2>
+					<form id="loading" method="POST" enctype="multipart/form-data">
+						<a class="btn btn-primary btn-lg-btn-demo" id="addImageBtn"  type="file" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</a>
+						
+						<div class="image-upload-wrap">
+							<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+							<div class="drag-text">
+							<h3>Drag and drop a file or select add Image</h3>
+							</div>
+						</div>
+
+				
+						<div class="file-upload-content">
+							<img class="file-upload-image" src="#" alt="your image" />
+							<div class="image-title-wrap">
+							<button type="button" id="removeBtn" onclick="removeUpload()" class="btn btn-primary btn-remove">Remove <span class="image-title">Uploaded Image</span></button>
+							</div>
+
+							<div class="image-title-wrap">
+							<button type="button" id="detectBtn" class="btn btn-primary btn-detect" onclick="showLoader()">Detect DR </button>
+							</div>
+						</div>
+					</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="../static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../static/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../static/js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="../static/js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="../static/js/main.js"></script>
+
+	</body>
+</html>
+
